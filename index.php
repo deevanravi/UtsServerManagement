@@ -13,15 +13,12 @@
         echo "<table>";
         echo "<tr><th>ID</th><th>Nama</th><th>Alamat</th><th>Jabatan</th></tr>";
 
-        $hasil = 0;
 
         foreach ($results as $row) {
-            $hasil = $hasil + 1;
             echo "<tr><td>".$row["ID"]."</td><td>".$row["Nama"]."</td><td>".$row["Alamat"]."</td><td>".$row["Jabatan"]."</td></tr>";
         }
 
         echo "</table>";
-        echo "Jumlah user : $hasil";
         
     ?>
 </body>
